@@ -29,7 +29,7 @@ My algorithm is not quite as complex as Anki's - it uses a simple 3 star rating 
 Beyond that, you can choose sets from the entire range of public sets on Quizlet and create your own master deck, removing cards you're not interested in at selection and merging them into one larger set. You can then save this set - and all of your star ratings with it - so that you can come back to exactly where you left off. Because the data is saved locally on your device, you can also send your deck to a friend so they can study off of it, too.
 
 This video gives it a quick walkthrough:
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WNgWUa39f28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br><br><br>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WNgWUa39f28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
 
 
 You can [view the code here](https://github.com/Jorycle/NMIX-4310/tree/master/RandomFlashcards), or [download the archive here](https://github.com/Jorycle/NMIX-4310/raw/master/RandomFlashcards.zip).
