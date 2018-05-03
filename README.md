@@ -31,4 +31,5 @@ Beyond that, you can choose sets from the entire range of public sets on Quizlet
 This video gives it a quick walkthrough:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WNgWUa39f28?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-You can [view the code here](https://github.com/Jorycle/NMIX-4310/tree/master/Jukebox), or [download the archive here](https://github.com/Jorycle/NMIX-4310/raw/master/Jukebox.zip).
+
+You can [view the code here](https://github.com/Jorycle/NMIX-4310/tree/master/RandomFlashcards), or [download the archive here](https://github.com/Jorycle/NMIX-4310/raw/master/RandomFlashcards.zip).
