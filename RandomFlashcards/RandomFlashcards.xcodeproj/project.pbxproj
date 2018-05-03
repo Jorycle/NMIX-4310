@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2A7211D2051B0E500CE125F /* LoadCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A7211C2051B0E500CE125F /* LoadCardsViewController.swift */; };
+		A2D3ED70203F3C360097D59C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3ED6F203F3C360097D59C /* AppDelegate.swift */; };
+		A2D3ED72203F3C360097D59C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D3ED71203F3C360097D59C /* ViewController.swift */; };
+		A2D3ED75203F3C360097D59C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2D3ED73203F3C360097D59C /* Main.storyboard */; };
+		A2D3ED77203F3C360097D59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D3ED76203F3C360097D59C /* Assets.xcassets */; };
+		B70AD5772067091700B61D48 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70AD5762067091700B61D48 /* DataController.swift */; };
+		B735271120530F91008045DC /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735271020530F91008045DC /* CardTableViewCell.swift */; };
+		B7376F7D2054741B0068032B /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7376F7C2054741B0068032B /* HubViewController.swift */; };
+		B75EA9CB209952B900F0D9BE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75EA9CA209952B900F0D9BE /* SearchViewController.swift */; };
+		B75EA9CD209952D400F0D9BE /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75EA9CC209952D400F0D9BE /* SearchCell.swift */; };
+		B781CCFB2054B4470074B1AF /* DisplayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781CCFA2054B4470074B1AF /* DisplayCardViewController.swift */; };
+		B7BBEB6920602A1E0092AE07 /* HubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBEB6820602A1E0092AE07 /* HubCollectionViewCell.swift */; };
+		B7BBEB6B206072020092AE07 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BBEB6A206072020092AE07 /* Launch Screen.storyboard */; };
+		B7D1C0E52056DF7E00991A0B /* NewCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D1C0E42056DF7E00991A0B /* NewCardsViewController.swift */; };
+		B7E70AA0205590DD007C7973 /* HGS1.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A92205590D0007C7973 /* HGS1.otf */; };
+		B7E70AA1205590DD007C7973 /* HGS1Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A93205590D1007C7973 /* HGS1Light.otf */; };
+		B7E70AA2205590DD007C7973 /* HGS1BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A94205590D2007C7973 /* HGS1BlackOblique.otf */; };
+		B7E70AA3205590DD007C7973 /* HGS1Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A95205590D3007C7973 /* HGS1Bold.otf */; };
+		B7E70AA4205590DD007C7973 /* HGS1SemiBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A96205590D4007C7973 /* HGS1SemiBoldOblique.otf */; };
+		B7E70AA5205590DD007C7973 /* HGS1LightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A97205590D5007C7973 /* HGS1LightOblique.otf */; };
+		B7E70AA6205590DD007C7973 /* HGS1Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A98205590D6007C7973 /* HGS1Hairline.otf */; };
+		B7E70AA7205590DD007C7973 /* HGS1Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A99205590D7007C7973 /* HGS1Thin.otf */; };
+		B7E70AA8205590DD007C7973 /* HGS1BoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A9A205590D8007C7973 /* HGS1BoldOblique.otf */; };
+		B7E70AA9205590DD007C7973 /* HGS1HairlineOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A9B205590D9007C7973 /* HGS1HairlineOblique.otf */; };
+		B7E70AAA205590DD007C7973 /* HGS1Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A9C205590DA007C7973 /* HGS1Oblique.otf */; };
+		B7E70AAB205590DD007C7973 /* HGS1ThinOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A9D205590DB007C7973 /* HGS1ThinOblique.otf */; };
+		B7E70AAC205590DD007C7973 /* HGS1Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A9E205590DC007C7973 /* HGS1Black.otf */; };
+		B7E70AAD205590DD007C7973 /* HGS1SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70A9F205590DC007C7973 /* HGS1SemiBold.otf */; };
+		B7E70ABC20559101007C7973 /* HGS3SemiBoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AAE205590F1007C7973 /* HGS3SemiBoldOblique.otf */; };
+		B7E70ABD20559101007C7973 /* HGS3Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AAF205590F2007C7973 /* HGS3Black.otf */; };
+		B7E70ABE20559101007C7973 /* HGS3Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB0205590F3007C7973 /* HGS3Light.otf */; };
+		B7E70ABF20559101007C7973 /* HGS3ThinOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB1205590F4007C7973 /* HGS3ThinOblique.otf */; };
+		B7E70AC020559101007C7973 /* HGS3Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB2205590F5007C7973 /* HGS3Thin.otf */; };
+		B7E70AC120559101007C7973 /* HGS3SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB3205590F6007C7973 /* HGS3SemiBold.otf */; };
+		B7E70AC220559101007C7973 /* HGS3.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB4205590F7007C7973 /* HGS3.otf */; };
+		B7E70AC320559101007C7973 /* HGS3HairlineOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB5205590F9007C7973 /* HGS3HairlineOblique.otf */; };
+		B7E70AC420559101007C7973 /* HGS3Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB6205590FA007C7973 /* HGS3Hairline.otf */; };
+		B7E70AC520559101007C7973 /* HGS3Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB7205590FB007C7973 /* HGS3Oblique.otf */; };
+		B7E70AC620559101007C7973 /* HGS3BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB8205590FD007C7973 /* HGS3BlackOblique.otf */; };
+		B7E70AC720559101007C7973 /* HGS3Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70AB9205590FE007C7973 /* HGS3Bold.otf */; };
+		B7E70AC820559101007C7973 /* HGS3LightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70ABA205590FF007C7973 /* HGS3LightOblique.otf */; };
+		B7E70AC920559101007C7973 /* HGS3BoldOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7E70ABB20559100007C7973 /* HGS3BoldOblique.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2A7211C2051B0E500CE125F /* LoadCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCardsViewController.swift; sourceTree = "<group>"; };
+		A2D3ED6C203F3C360097D59C /* RandomFlashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomFlashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D3ED6F203F3C360097D59C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2D3ED71203F3C360097D59C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2D3ED74203F3C360097D59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2D3ED76203F3C360097D59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2D3ED7B203F3C370097D59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70AD5762067091700B61D48 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B735271020530F91008045DC /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		B7376F7C2054741B0068032B /* HubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
+		B75EA9CA209952B900F0D9BE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B75EA9CC209952D400F0D9BE /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		B781CCFA2054B4470074B1AF /* DisplayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCardViewController.swift; sourceTree = "<group>"; };
+		B7BBEB6820602A1E0092AE07 /* HubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7BBEB6A206072020092AE07 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B7D1C0E42056DF7E00991A0B /* NewCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardsViewController.swift; sourceTree = "<group>"; };
+		B7E70A92205590D0007C7973 /* HGS1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1.otf; sourceTree = "<group>"; };
+		B7E70A93205590D1007C7973 /* HGS1Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1Light.otf; sourceTree = "<group>"; };
+		B7E70A94205590D2007C7973 /* HGS1BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1BlackOblique.otf; sourceTree = "<group>"; };
+		B7E70A95205590D3007C7973 /* HGS1Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1Bold.otf; sourceTree = "<group>"; };
+		B7E70A96205590D4007C7973 /* HGS1SemiBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1SemiBoldOblique.otf; sourceTree = "<group>"; };
+		B7E70A97205590D5007C7973 /* HGS1LightOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1LightOblique.otf; sourceTree = "<group>"; };
+		B7E70A98205590D6007C7973 /* HGS1Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1Hairline.otf; sourceTree = "<group>"; };
+		B7E70A99205590D7007C7973 /* HGS1Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1Thin.otf; sourceTree = "<group>"; };
+		B7E70A9A205590D8007C7973 /* HGS1BoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1BoldOblique.otf; sourceTree = "<group>"; };
+		B7E70A9B205590D9007C7973 /* HGS1HairlineOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1HairlineOblique.otf; sourceTree = "<group>"; };
+		B7E70A9C205590DA007C7973 /* HGS1Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1Oblique.otf; sourceTree = "<group>"; };
+		B7E70A9D205590DB007C7973 /* HGS1ThinOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1ThinOblique.otf; sourceTree = "<group>"; };
+		B7E70A9E205590DC007C7973 /* HGS1Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1Black.otf; sourceTree = "<group>"; };
+		B7E70A9F205590DC007C7973 /* HGS1SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS1SemiBold.otf; sourceTree = "<group>"; };
+		B7E70AAE205590F1007C7973 /* HGS3SemiBoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3SemiBoldOblique.otf; sourceTree = "<group>"; };
+		B7E70AAF205590F2007C7973 /* HGS3Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3Black.otf; sourceTree = "<group>"; };
+		B7E70AB0205590F3007C7973 /* HGS3Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3Light.otf; sourceTree = "<group>"; };
+		B7E70AB1205590F4007C7973 /* HGS3ThinOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3ThinOblique.otf; sourceTree = "<group>"; };
+		B7E70AB2205590F5007C7973 /* HGS3Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3Thin.otf; sourceTree = "<group>"; };
+		B7E70AB3205590F6007C7973 /* HGS3SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3SemiBold.otf; sourceTree = "<group>"; };
+		B7E70AB4205590F7007C7973 /* HGS3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3.otf; sourceTree = "<group>"; };
+		B7E70AB5205590F9007C7973 /* HGS3HairlineOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3HairlineOblique.otf; sourceTree = "<group>"; };
+		B7E70AB6205590FA007C7973 /* HGS3Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3Hairline.otf; sourceTree = "<group>"; };
+		B7E70AB7205590FB007C7973 /* HGS3Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3Oblique.otf; sourceTree = "<group>"; };
+		B7E70AB8205590FD007C7973 /* HGS3BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3BlackOblique.otf; sourceTree = "<group>"; };
+		B7E70AB9205590FE007C7973 /* HGS3Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3Bold.otf; sourceTree = "<group>"; };
+		B7E70ABA205590FF007C7973 /* HGS3LightOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3LightOblique.otf; sourceTree = "<group>"; };
+		B7E70ABB20559100007C7973 /* HGS3BoldOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HGS3BoldOblique.otf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2D3ED69203F3C360097D59C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2D3ED63203F3C360097D59C = {
+			isa = PBXGroup;
+			children = (
+				A2D3ED6E203F3C360097D59C /* RandomFlashcards */,
+				A2D3ED6D203F3C360097D59C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2D3ED6D203F3C360097D59C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2D3ED6C203F3C360097D59C /* RandomFlashcards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2D3ED6E203F3C360097D59C /* RandomFlashcards */ = {
+			isa = PBXGroup;
+			children = (
+				B7E70A912055908A007C7973 /* fonts */,
+				A2D3ED6F203F3C360097D59C /* AppDelegate.swift */,
+				B781CCFA2054B4470074B1AF /* DisplayCardViewController.swift */,
+				A2D3ED71203F3C360097D59C /* ViewController.swift */,
+				A2D3ED73203F3C360097D59C /* Main.storyboard */,
+				A2A7211C2051B0E500CE125F /* LoadCardsViewController.swift */,
+				A2D3ED76203F3C360097D59C /* Assets.xcassets */,
+				A2D3ED7B203F3C370097D59C /* Info.plist */,
+				B735271020530F91008045DC /* CardTableViewCell.swift */,
+				B7376F7C2054741B0068032B /* HubViewController.swift */,
+				B7D1C0E42056DF7E00991A0B /* NewCardsViewController.swift */,
+				B7BBEB6820602A1E0092AE07 /* HubCollectionViewCell.swift */,
+				B7BBEB6A206072020092AE07 /* Launch Screen.storyboard */,
+				B70AD5762067091700B61D48 /* DataController.swift */,
+				B75EA9CA209952B900F0D9BE /* SearchViewController.swift */,
+				B75EA9CC209952D400F0D9BE /* SearchCell.swift */,
+			);
+			path = RandomFlashcards;
+			sourceTree = "<group>";
+		};
+		B7E70A912055908A007C7973 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B7E70AAF205590F2007C7973 /* HGS3Black.otf */,
+				B7E70AB8205590FD007C7973 /* HGS3BlackOblique.otf */,
+				B7E70AB9205590FE007C7973 /* HGS3Bold.otf */,
+				B7E70ABB20559100007C7973 /* HGS3BoldOblique.otf */,
+				B7E70AB6205590FA007C7973 /* HGS3Hairline.otf */,
+				B7E70AB5205590F9007C7973 /* HGS3HairlineOblique.otf */,
+				B7E70AB0205590F3007C7973 /* HGS3Light.otf */,
+				B7E70ABA205590FF007C7973 /* HGS3LightOblique.otf */,
+				B7E70AB7205590FB007C7973 /* HGS3Oblique.otf */,
+				B7E70AB3205590F6007C7973 /* HGS3SemiBold.otf */,
+				B7E70AAE205590F1007C7973 /* HGS3SemiBoldOblique.otf */,
+				B7E70AB2205590F5007C7973 /* HGS3Thin.otf */,
+				B7E70AB1205590F4007C7973 /* HGS3ThinOblique.otf */,
+				B7E70AB4205590F7007C7973 /* HGS3.otf */,
+				B7E70A9E205590DC007C7973 /* HGS1Black.otf */,
+				B7E70A94205590D2007C7973 /* HGS1BlackOblique.otf */,
+				B7E70A95205590D3007C7973 /* HGS1Bold.otf */,
+				B7E70A9A205590D8007C7973 /* HGS1BoldOblique.otf */,
+				B7E70A98205590D6007C7973 /* HGS1Hairline.otf */,
+				B7E70A9B205590D9007C7973 /* HGS1HairlineOblique.otf */,
+				B7E70A93205590D1007C7973 /* HGS1Light.otf */,
+				B7E70A97205590D5007C7973 /* HGS1LightOblique.otf */,
+				B7E70A9C205590DA007C7973 /* HGS1Oblique.otf */,
+				B7E70A9F205590DC007C7973 /* HGS1SemiBold.otf */,
+				B7E70A99205590D7007C7973 /* HGS1Thin.otf */,
+				B7E70A9D205590DB007C7973 /* HGS1ThinOblique.otf */,
+				B7E70A92205590D0007C7973 /* HGS1.otf */,
+				B7E70A96205590D4007C7973 /* HGS1SemiBoldOblique.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2D3ED6B203F3C360097D59C /* RandomFlashcards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D3ED7E203F3C370097D59C /* Build configuration list for PBXNativeTarget "RandomFlashcards" */;
+			buildPhases = (
+				A2D3ED68203F3C360097D59C /* Sources */,
+				A2D3ED69203F3C360097D59C /* Frameworks */,
+				A2D3ED6A203F3C360097D59C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomFlashcards;
+			productName = MidtermProject;
+			productReference = A2D3ED6C203F3C360097D59C /* RandomFlashcards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2D3ED64203F3C360097D59C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Joseph Clements";
+				TargetAttributes = {
+					A2D3ED6B203F3C360097D59C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A2D3ED67203F3C360097D59C /* Build configuration list for PBXProject "RandomFlashcards" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2D3ED63203F3C360097D59C;
+			productRefGroup = A2D3ED6D203F3C360097D59C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2D3ED6B203F3C360097D59C /* RandomFlashcards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2D3ED6A203F3C360097D59C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E70ABE20559101007C7973 /* HGS3Light.otf in Resources */,
+				B7E70ABD20559101007C7973 /* HGS3Black.otf in Resources */,
+				B7E70AA9205590DD007C7973 /* HGS1HairlineOblique.otf in Resources */,
+				B7E70AAA205590DD007C7973 /* HGS1Oblique.otf in Resources */,
+				B7E70AA6205590DD007C7973 /* HGS1Hairline.otf in Resources */,
+				B7E70AC520559101007C7973 /* HGS3Oblique.otf in Resources */,
+				B7E70AC320559101007C7973 /* HGS3HairlineOblique.otf in Resources */,
+				B7E70AAB205590DD007C7973 /* HGS1ThinOblique.otf in Resources */,
+				B7E70AA0205590DD007C7973 /* HGS1.otf in Resources */,
+				B7E70AA7205590DD007C7973 /* HGS1Thin.otf in Resources */,
+				B7E70AC820559101007C7973 /* HGS3LightOblique.otf in Resources */,
+				B7E70ABF20559101007C7973 /* HGS3ThinOblique.otf in Resources */,
+				B7E70ABC20559101007C7973 /* HGS3SemiBoldOblique.otf in Resources */,
+				B7E70AA2205590DD007C7973 /* HGS1BlackOblique.otf in Resources */,
+				B7E70AC720559101007C7973 /* HGS3Bold.otf in Resources */,
+				B7E70AC420559101007C7973 /* HGS3Hairline.otf in Resources */,
+				B7E70AAC205590DD007C7973 /* HGS1Black.otf in Resources */,
+				B7E70AA3205590DD007C7973 /* HGS1Bold.otf in Resources */,
+				B7E70AA4205590DD007C7973 /* HGS1SemiBoldOblique.otf in Resources */,
+				B7E70AC920559101007C7973 /* HGS3BoldOblique.otf in Resources */,
+				B7E70AC220559101007C7973 /* HGS3.otf in Resources */,
+				B7E70AC020559101007C7973 /* HGS3Thin.otf in Resources */,
+				B7E70AA8205590DD007C7973 /* HGS1BoldOblique.otf in Resources */,
+				B7BBEB6B206072020092AE07 /* Launch Screen.storyboard in Resources */,
+				B7E70AC120559101007C7973 /* HGS3SemiBold.otf in Resources */,
+				B7E70AC620559101007C7973 /* HGS3BlackOblique.otf in Resources */,
+				B7E70AAD205590DD007C7973 /* HGS1SemiBold.otf in Resources */,
+				B7E70AA5205590DD007C7973 /* HGS1LightOblique.otf in Resources */,
+				A2D3ED77203F3C360097D59C /* Assets.xcassets in Resources */,
+				A2D3ED75203F3C360097D59C /* Main.storyboard in Resources */,
+				B7E70AA1205590DD007C7973 /* HGS1Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2D3ED68203F3C360097D59C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75EA9CB209952B900F0D9BE /* SearchViewController.swift in Sources */,
+				B75EA9CD209952D400F0D9BE /* SearchCell.swift in Sources */,
+				A2D3ED72203F3C360097D59C /* ViewController.swift in Sources */,
+				B781CCFB2054B4470074B1AF /* DisplayCardViewController.swift in Sources */,
+				B70AD5772067091700B61D48 /* DataController.swift in Sources */,
+				B7376F7D2054741B0068032B /* HubViewController.swift in Sources */,
+				A2A7211D2051B0E500CE125F /* LoadCardsViewController.swift in Sources */,
+				B7BBEB6920602A1E0092AE07 /* HubCollectionViewCell.swift in Sources */,
+				A2D3ED70203F3C360097D59C /* AppDelegate.swift in Sources */,
+				B735271120530F91008045DC /* CardTableViewCell.swift in Sources */,
+				B7D1C0E52056DF7E00991A0B /* NewCardsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2D3ED73203F3C360097D59C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2D3ED74203F3C360097D59C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2D3ED7C203F3C370097D59C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2D3ED7D203F3C370097D59C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2D3ED7F203F3C370097D59C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/RandomFlashcards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uga.RandomFlashcards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2D3ED80203F3C370097D59C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/RandomFlashcards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uga.RandomFlashcards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2D3ED67203F3C360097D59C /* Build configuration list for PBXProject "RandomFlashcards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D3ED7C203F3C370097D59C /* Debug */,
+				A2D3ED7D203F3C370097D59C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D3ED7E203F3C370097D59C /* Build configuration list for PBXNativeTarget "RandomFlashcards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D3ED7F203F3C370097D59C /* Debug */,
+				A2D3ED80203F3C370097D59C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2D3ED64203F3C360097D59C /* Project object */;
+}

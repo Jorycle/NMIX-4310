@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HGS1Black.otf">
+            <string>HurmeGeometricSans1-Black</string>
+        </array>
+        <array key="HGS1Bold.otf">
+            <string>HurmeGeometricSans1-Bold</string>
+        </array>
+        <array key="HGS1SemiBold.otf">
+            <string>HurmeGeometricSans1-SemiBold</string>
+        </array>
+        <array key="HGS3.otf">
+            <string>HurmeGeometricSans3-Regular</string>
+        </array>
+        <array key="HGS3Black.otf">
+            <string>HurmeGeometricSans3-Black</string>
+        </array>
+        <array key="HGS3Bold.otf">
+            <string>HurmeGeometricSans3-Bold</string>
+        </array>
+        <array key="HGS3SemiBold.otf">
+            <string>HurmeGeometricSans3-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomFlashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2Aw-vL-dJR">
+                                <rect key="frame" x="15" y="35.000000000000014" width="384" height="250.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Flashcards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="iLP-0w-9bk">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="41"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Black" family="Hurme Geometric Sans 3" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.35707768179337196" green="0.42365852849917407" blue="0.62340106861658029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="5" height="6"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCw-YZ-I0u">
+                                        <rect key="frame" x="0.0" y="41" width="384" height="180"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-Bold" family="Hurme Geometric Sans 1" pointSize="32"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="100" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Go!" backgroundImage="icon-flashcard-white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oD0-7v-HKu" kind="show" identifier="PassGo" id="kYG-Bb-RRw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Quizlet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6R-ZO-odO">
+                                        <rect key="frame" x="0.0" y="221" width="384" height="29.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Bold" family="Hurme Geometric Sans 3" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25737583637237549" green="0.34301507472991943" blue="0.69617325067520142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Aw-vL-dJR" secondAttribute="bottom" constant="15" id="5fn-Qz-pse"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Aw-vL-dJR" secondAttribute="trailing" constant="15" id="JZo-4p-aco"/>
+                            <constraint firstItem="2Aw-vL-dJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="rBN-vl-pQy"/>
+                            <constraint firstItem="2Aw-vL-dJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="sLW-R3-lBs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WYb-5r-LKm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Hub View Controller-->
+        <scene sceneID="x0k-0Z-6Jb">
+            <objects>
+                <viewController id="oD0-7v-HKu" customClass="HubViewController" customModule="RandomFlashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="afF-k7-sj3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fBz-iy-znP" userLabel="ButtonStack">
+                                <rect key="frame" x="15" y="631" width="384" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" tag="-2" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kAL-h2-620">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WaF-8J-czP">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ec-Lt-7kt" userLabel="Clear">
+                                                        <rect key="frame" x="0.0" y="0.0" width="84.666666666666671" height="40"/>
+                                                        <color key="backgroundColor" red="0.99975222350000004" green="0.80441337820000003" blue="0.11985153699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="20"/>
+                                                        <state key="normal" image="trash">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="disabled">
+                                                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="ClearButton:" destination="oD0-7v-HKu" eventType="touchUpInside" id="xIp-r1-1bM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVV-OV-1L8" userLabel="Save">
+                                                        <rect key="frame" x="99.666666666666686" y="0.0" width="85" height="40"/>
+                                                        <color key="backgroundColor" red="0.99975222350000004" green="0.80441337820000003" blue="0.11985153699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="20"/>
+                                                        <state key="normal" image="save">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="disabled">
+                                                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="SaveButton:" destination="oD0-7v-HKu" eventType="touchUpInside" id="UEx-AV-qFb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7f-xM-swZ">
+                                                <rect key="frame" x="199.66666666666663" y="0.0" width="184.33333333333337" height="40"/>
+                                                <color key="backgroundColor" red="0.99975222350000004" green="0.80441337820000003" blue="0.11985153699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="20"/>
+                                                <state key="normal" title="Add...">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="AddButton:" destination="oD0-7v-HKu" eventType="touchUpInside" id="mpE-i0-QfK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEV-WW-ko9">
+                                        <rect key="frame" x="0.0" y="50" width="384" height="40"/>
+                                        <color key="backgroundColor" red="0.23432627320289612" green="0.81294131278991699" blue="0.8122323751449585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Bold" family="Hurme Geometric Sans 3" pointSize="24"/>
+                                        <state key="normal" title="Shuffle and Go!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ShuffleButton:" destination="oD0-7v-HKu" eventType="touchUpInside" id="qB6-Oa-ZMF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="NEa-cf-CdX"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Included Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aF-gb-Jlm">
+                                <rect key="frame" x="15" y="25" width="384" height="33"/>
+                                <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U8W-zW-HSS">
+                                <rect key="frame" x="15" y="73" width="384" height="543"/>
+                                <color key="backgroundColor" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7SG-ln-j0E">
+                                    <size key="itemSize" width="175" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hubCollectionCell" id="EK8-mQ-dsw" customClass="HubCollectionViewCell" customModule="RandomFlashcards" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="175" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BUp-wb-ZBd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="215" height="90"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fim-Fa-fsI">
+                                                            <rect key="frame" x="60" y="0.0" width="55.333333333333343" height="36"/>
+                                                            <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BxP-ax-hCh" userLabel="stars">
+                                                            <rect key="frame" x="63.666666666666657" y="36" width="48" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="48" id="MtP-vG-bDP"/>
+                                                                <constraint firstAttribute="height" constant="16" id="ZLj-A1-v4O"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="BUp-wb-ZBd" firstAttribute="leading" secondItem="EK8-mQ-dsw" secondAttribute="leading" constant="-5" id="9DP-lG-Z1b"/>
+                                            <constraint firstAttribute="trailing" secondItem="BUp-wb-ZBd" secondAttribute="trailing" constant="5" id="RUM-T9-Vdk"/>
+                                            <constraint firstItem="BUp-wb-ZBd" firstAttribute="top" secondItem="EK8-mQ-dsw" secondAttribute="top" constant="-5" id="eM3-uQ-LLd"/>
+                                            <constraint firstAttribute="bottom" secondItem="BUp-wb-ZBd" secondAttribute="bottom" constant="3" id="uvv-eZ-HTF"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="CellLabel" destination="Fim-Fa-fsI" id="Fg5-uw-9F3"/>
+                                            <outlet property="starImage" destination="BxP-ax-hCh" id="DPq-Ul-eOq"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25812309979999998" green="0.34161823990000001" blue="0.69881242509999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fBz-iy-znP" firstAttribute="top" secondItem="U8W-zW-HSS" secondAttribute="bottom" constant="15" id="4sj-T4-NgR"/>
+                            <constraint firstItem="3aF-gb-Jlm" firstAttribute="leading" secondItem="Ek2-Ph-8il" secondAttribute="leading" constant="15" id="EXE-AV-OxP"/>
+                            <constraint firstItem="U8W-zW-HSS" firstAttribute="leading" secondItem="Ek2-Ph-8il" secondAttribute="leading" constant="15" id="Mms-om-NmF"/>
+                            <constraint firstItem="Ek2-Ph-8il" firstAttribute="trailing" secondItem="fBz-iy-znP" secondAttribute="trailing" constant="15" id="UDw-f5-Exc"/>
+                            <constraint firstItem="Ek2-Ph-8il" firstAttribute="trailing" secondItem="U8W-zW-HSS" secondAttribute="trailing" constant="15" id="a2p-1z-Qt3"/>
+                            <constraint firstItem="Ek2-Ph-8il" firstAttribute="trailing" secondItem="3aF-gb-Jlm" secondAttribute="trailing" constant="15" id="c29-yR-xtV"/>
+                            <constraint firstItem="Ek2-Ph-8il" firstAttribute="bottom" secondItem="fBz-iy-znP" secondAttribute="bottom" constant="15" id="jnE-uR-TG1"/>
+                            <constraint firstItem="3aF-gb-Jlm" firstAttribute="top" secondItem="afF-k7-sj3" secondAttribute="top" constant="25" id="oZu-xz-5lz"/>
+                            <constraint firstItem="fBz-iy-znP" firstAttribute="leading" secondItem="Ek2-Ph-8il" secondAttribute="leading" constant="15" id="pCt-NO-Zbc"/>
+                            <constraint firstItem="U8W-zW-HSS" firstAttribute="top" secondItem="3aF-gb-Jlm" secondAttribute="bottom" constant="15" id="tNn-q6-gHT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ek2-Ph-8il"/>
+                    </view>
+                    <connections>
+                        <outlet property="HubCollection" destination="U8W-zW-HSS" id="eqw-HI-F50"/>
+                        <segue destination="kzg-91-zM0" kind="show" identifier="AddSegue" id="S3T-zb-IAx"/>
+                        <segue destination="LDU-dH-zDk" kind="show" identifier="DisplayCard" id="VpQ-GO-o69"/>
+                        <segue destination="5nZ-ha-jgg" kind="show" identifier="Search" id="GYG-L2-QH6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grL-GE-W6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="117"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="4pi-02-uH5">
+            <objects>
+                <viewController id="5nZ-ha-jgg" userLabel="Search View Controller" customClass="SearchViewController" customModule="RandomFlashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jz0-i9-SuB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D2y-j6-X6z" userLabel="ResultTable">
+                                <rect key="frame" x="15" y="130" width="384" height="540"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchCell" rowHeight="100" id="0oi-cB-e7Z" customClass="SearchCell" customModule="RandomFlashcards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="384" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0oi-cB-e7Z" id="iGC-R5-a6u">
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNB-iY-kub">
+                                                    <rect key="frame" x="5" y="5" width="374" height="95"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5ER-Vl-2S9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="95"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxq-h2-WA3">
+                                                                    <rect key="frame" x="0.0" y="35" width="136.66666666666666" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBold" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TermCount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-9F-qh4">
+                                                                    <rect key="frame" x="136.66666666666663" y="35" width="237.33333333333337" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="5ER-Vl-2S9" firstAttribute="leading" secondItem="oNB-iY-kub" secondAttribute="leading" id="HZo-jd-ZZh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5ER-Vl-2S9" secondAttribute="trailing" id="L16-gs-ATF"/>
+                                                        <constraint firstItem="5ER-Vl-2S9" firstAttribute="top" secondItem="oNB-iY-kub" secondAttribute="top" id="ZTs-iI-C1j"/>
+                                                        <constraint firstAttribute="bottom" secondItem="5ER-Vl-2S9" secondAttribute="bottom" id="jhT-qM-N1V"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="oNB-iY-kub" secondAttribute="bottom" id="3gE-nR-6oJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="oNB-iY-kub" secondAttribute="trailing" constant="5" id="c8W-ld-Bks"/>
+                                                <constraint firstItem="oNB-iY-kub" firstAttribute="leading" secondItem="iGC-R5-a6u" secondAttribute="leading" constant="5" id="kuf-11-rXy"/>
+                                                <constraint firstItem="oNB-iY-kub" firstAttribute="top" secondItem="iGC-R5-a6u" secondAttribute="top" constant="5" id="qqb-iw-6Nt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ResultCount" destination="Mga-9F-qh4" id="tv7-lA-l61"/>
+                                            <outlet property="ResultName" destination="Dxq-h2-WA3" id="w2v-2n-kBI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qPG-oZ-J7i" userLabel="Search Stack">
+                                <rect key="frame" x="15" y="75" width="384" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7M-pa-vKq" userLabel="SearchText">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEr-Wv-CCY">
+                                        <rect key="frame" x="308" y="0.0" width="76" height="40"/>
+                                        <color key="backgroundColor" red="0.99975222350000004" green="0.80441337820000003" blue="0.11985153699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="S0x-e2-ztG"/>
+                                            <constraint firstAttribute="width" constant="76" id="f4d-3p-1ZA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="20"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SearchButton:" destination="5nZ-ha-jgg" eventType="touchUpInside" id="iL0-VS-XIc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTR-3e-gRD" userLabel="Header Stack">
+                                <rect key="frame" x="15" y="25" width="384" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPA-ck-WBO">
+                                        <rect key="frame" x="0.0" y="0.0" width="218.33333333333334" height="35"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="23"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.99975222350000004" green="0.80441337820000003" blue="0.11985153699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oD0-7v-HKu" kind="show" identifier="CancelSearch" id="zMv-UT-xnx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swK-51-iYQ">
+                                        <rect key="frame" x="218.33333333333337" y="0.0" width="165.66666666666663" height="35"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="33"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMR-4i-YCd">
+                                <rect key="frame" x="15" y="685" width="384" height="36"/>
+                                <color key="backgroundColor" red="0.23432627319999999" green="0.81294131280000004" blue="0.81223237510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-Bold" family="Hurme Geometric Sans 3" pointSize="24"/>
+                                <state key="normal" title="Add Set">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SelectButton:" destination="5nZ-ha-jgg" eventType="touchUpInside" id="INR-0I-Gds"/>
+                                    <action selector="ShuffleButton:" destination="oD0-7v-HKu" eventType="touchUpInside" id="cMn-0p-V17"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25812309979999998" green="0.34161823990000001" blue="0.69881242509999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D2y-j6-X6z" firstAttribute="leading" secondItem="aic-Hg-miu" secondAttribute="leading" constant="15" id="4aP-Qa-W5g"/>
+                            <constraint firstItem="qPG-oZ-J7i" firstAttribute="leading" secondItem="aic-Hg-miu" secondAttribute="leading" constant="15" id="4qa-pB-Eoj"/>
+                            <constraint firstItem="aic-Hg-miu" firstAttribute="bottom" secondItem="RMR-4i-YCd" secondAttribute="bottom" constant="15" id="5EM-8v-9KS"/>
+                            <constraint firstItem="D2y-j6-X6z" firstAttribute="top" secondItem="qPG-oZ-J7i" secondAttribute="bottom" constant="15" id="8v0-Qa-xHQ"/>
+                            <constraint firstItem="RMR-4i-YCd" firstAttribute="top" secondItem="D2y-j6-X6z" secondAttribute="bottom" constant="15" id="QCG-Qd-lb7"/>
+                            <constraint firstItem="aic-Hg-miu" firstAttribute="trailing" secondItem="KTR-3e-gRD" secondAttribute="trailing" constant="15" id="bZH-eS-X9a"/>
+                            <constraint firstItem="aic-Hg-miu" firstAttribute="trailing" secondItem="RMR-4i-YCd" secondAttribute="trailing" constant="15" id="baA-He-6vW"/>
+                            <constraint firstItem="KTR-3e-gRD" firstAttribute="leading" secondItem="aic-Hg-miu" secondAttribute="leading" constant="15" id="bsS-4t-j6v"/>
+                            <constraint firstItem="aic-Hg-miu" firstAttribute="trailing" secondItem="qPG-oZ-J7i" secondAttribute="trailing" constant="15" id="cYm-dL-0xu"/>
+                            <constraint firstItem="aic-Hg-miu" firstAttribute="trailing" secondItem="D2y-j6-X6z" secondAttribute="trailing" constant="15" id="i1A-72-shN"/>
+                            <constraint firstItem="RMR-4i-YCd" firstAttribute="leading" secondItem="aic-Hg-miu" secondAttribute="leading" constant="15" id="mIr-Gf-3Lg"/>
+                            <constraint firstItem="qPG-oZ-J7i" firstAttribute="top" secondItem="KTR-3e-gRD" secondAttribute="bottom" constant="15" id="udN-uU-phg"/>
+                            <constraint firstItem="KTR-3e-gRD" firstAttribute="top" secondItem="jz0-i9-SuB" secondAttribute="top" constant="25" id="xnk-SJ-LcG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aic-Hg-miu"/>
+                    </view>
+                    <connections>
+                        <outlet property="SearchTable" destination="D2y-j6-X6z" id="ak4-S7-kPo"/>
+                        <outlet property="SearchText" destination="W7M-pa-vKq" id="zsT-1w-j3I"/>
+                        <segue destination="kzg-91-zM0" kind="show" identifier="AddSearch" id="tLx-0Y-gDE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JfD-Av-bf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1166.6666666666667" y="804.61956521739137"/>
+        </scene>
+        <!--New Cards View Controller-->
+        <scene sceneID="zcG-V0-wLT">
+            <objects>
+                <viewController id="kzg-91-zM0" customClass="NewCardsViewController" customModule="RandomFlashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c9M-Gh-WVX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" delaysContentTouches="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-Cw-C3T" userLabel="NewCardTable">
+                                <rect key="frame" x="15" y="75" width="384" height="595"/>
+                                <color key="backgroundColor" red="0.94110429289999997" green="0.94121712449999995" blue="0.94106596710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CardCells" rowHeight="100" id="yOz-wR-0si" customClass="CardTableViewCell" customModule="RandomFlashcards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="384" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yOz-wR-0si" id="klz-nW-vHv">
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRS-q5-8p3">
+                                                    <rect key="frame" x="5" y="5" width="374" height="95"/>
+                                                    <subviews>
+                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wb-aZ-Th7">
+                                                            <rect key="frame" x="3" y="31" width="32" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="32" id="cg4-as-NGF"/>
+                                                                <constraint firstAttribute="height" constant="32" id="uI9-pG-PEy"/>
+                                                            </constraints>
+                                                            <state key="normal" image="icons8-unchecked-checkbox-48"/>
+                                                            <state key="selected" image="icons8-checked-checkbox-48"/>
+                                                        </button>
+                                                        <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="laD-D4-aa6">
+                                                            <rect key="frame" x="37" y="5" width="332" height="85"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="termLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irQ-7Y-9J9">
+                                                                    <rect key="frame" x="0.0" y="30" width="166" height="25"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="defLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNm-NY-jQn">
+                                                                    <rect key="frame" x="166" y="30" width="166" height="25"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <fontDescription key="fontDescription" name="HurmeGeometricSans3-Regular" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="4wb-aZ-Th7" firstAttribute="centerY" secondItem="laD-D4-aa6" secondAttribute="centerY" id="3F7-Up-o4o"/>
+                                                        <constraint firstAttribute="bottom" secondItem="laD-D4-aa6" secondAttribute="bottom" constant="5" id="ECs-g2-vV1"/>
+                                                        <constraint firstItem="laD-D4-aa6" firstAttribute="top" secondItem="vRS-q5-8p3" secondAttribute="top" constant="5" id="UGD-Iu-ahd"/>
+                                                        <constraint firstItem="laD-D4-aa6" firstAttribute="leading" secondItem="4wb-aZ-Th7" secondAttribute="trailing" constant="2" id="Y3l-ub-wIB"/>
+                                                        <constraint firstItem="4wb-aZ-Th7" firstAttribute="leading" secondItem="vRS-q5-8p3" secondAttribute="leading" constant="3" id="hT9-6g-XPw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="laD-D4-aa6" secondAttribute="trailing" constant="5" id="sdT-GK-BqT"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="vRS-q5-8p3" secondAttribute="bottom" id="qK6-Pj-OTg"/>
+                                                <constraint firstItem="vRS-q5-8p3" firstAttribute="top" secondItem="klz-nW-vHv" secondAttribute="top" constant="5" id="tDk-Nl-Eth"/>
+                                                <constraint firstItem="vRS-q5-8p3" firstAttribute="leading" secondItem="klz-nW-vHv" secondAttribute="leading" constant="5" id="tzR-SM-Aea"/>
+                                                <constraint firstAttribute="trailing" secondItem="vRS-q5-8p3" secondAttribute="trailing" constant="5" id="w2e-L4-hpf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkButton" destination="4wb-aZ-Th7" id="Yny-3O-ShE"/>
+                                            <outlet property="defLabel" destination="LNm-NY-jQn" id="bMm-kK-i7O"/>
+                                            <outlet property="termLabel" destination="irQ-7Y-9J9" id="Fe6-eR-4CJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BnQ-8t-Gy5" userLabel="OptionStack">
+                                <rect key="frame" x="15" y="685" width="384" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikB-0G-PcY">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="36"/>
+                                        <color key="backgroundColor" red="0.23432627319999999" green="0.81294131280000004" blue="0.81223237510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Bold" family="Hurme Geometric Sans 3" pointSize="24"/>
+                                        <state key="normal" title="Toggle All">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ToggleButton:" destination="kzg-91-zM0" eventType="touchUpInside" id="rAP-B2-fF7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83V-wj-IgU">
+                                        <rect key="frame" x="199.66666666666663" y="0.0" width="184.33333333333337" height="36"/>
+                                        <color key="backgroundColor" red="0.23432627319999999" green="0.81294131280000004" blue="0.81223237510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Bold" family="Hurme Geometric Sans 3" pointSize="24"/>
+                                        <state key="normal" title="Add Cards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AddSButton:" destination="kzg-91-zM0" eventType="touchUpInside" id="Dnb-gp-qh2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="J8g-2k-GL3" userLabel="HeaderStack">
+                                <rect key="frame" x="15" y="25" width="384" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fA-eG-1EK">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="35"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="23"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.99975222350000004" green="0.80441337820000003" blue="0.11985153699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oD0-7v-HKu" kind="show" identifier="CancelSegue" id="gAB-BS-9Kx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ik-oc-vjm">
+                                        <rect key="frame" x="192" y="0.0" width="192" height="35"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="33"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7Ik-oc-vjm" secondAttribute="bottom" id="JVW-3J-Gej"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Ik-oc-vjm" secondAttribute="trailing" id="Q73-RG-4gf"/>
+                                    <constraint firstItem="7Ik-oc-vjm" firstAttribute="top" secondItem="J8g-2k-GL3" secondAttribute="top" id="St4-U9-8ne"/>
+                                    <constraint firstItem="9fA-eG-1EK" firstAttribute="leading" secondItem="J8g-2k-GL3" secondAttribute="leading" id="aZI-yt-qfl"/>
+                                    <constraint firstItem="7Ik-oc-vjm" firstAttribute="leading" secondItem="9fA-eG-1EK" secondAttribute="trailing" id="kaK-nk-sDq"/>
+                                    <constraint firstAttribute="bottom" secondItem="9fA-eG-1EK" secondAttribute="bottom" id="qxu-Ue-sSG"/>
+                                    <constraint firstItem="7Ik-oc-vjm" firstAttribute="leading" secondItem="9fA-eG-1EK" secondAttribute="trailing" id="rzp-ua-t1Y"/>
+                                    <constraint firstItem="9fA-eG-1EK" firstAttribute="top" secondItem="J8g-2k-GL3" secondAttribute="top" id="ucG-El-1Og"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25812309979999998" green="0.34161823990000001" blue="0.69881242509999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4TK-Cw-C3T" firstAttribute="leading" secondItem="tjA-DY-Kp8" secondAttribute="leading" constant="15" id="LSy-Cp-tOG"/>
+                            <constraint firstItem="BnQ-8t-Gy5" firstAttribute="leading" secondItem="tjA-DY-Kp8" secondAttribute="leading" constant="15" id="SNs-72-yxt"/>
+                            <constraint firstItem="tjA-DY-Kp8" firstAttribute="trailing" secondItem="BnQ-8t-Gy5" secondAttribute="trailing" constant="15" id="SqG-nZ-a9E"/>
+                            <constraint firstItem="J8g-2k-GL3" firstAttribute="leading" secondItem="tjA-DY-Kp8" secondAttribute="leading" constant="15" id="XYV-0a-nn2"/>
+                            <constraint firstItem="tjA-DY-Kp8" firstAttribute="bottom" secondItem="BnQ-8t-Gy5" secondAttribute="bottom" constant="15" id="ZSu-7a-ktf"/>
+                            <constraint firstItem="4TK-Cw-C3T" firstAttribute="top" secondItem="J8g-2k-GL3" secondAttribute="bottom" constant="15" id="cef-EQ-dnL"/>
+                            <constraint firstItem="tjA-DY-Kp8" firstAttribute="trailing" secondItem="J8g-2k-GL3" secondAttribute="trailing" constant="15" id="f2b-iw-Asd"/>
+                            <constraint firstItem="J8g-2k-GL3" firstAttribute="top" secondItem="c9M-Gh-WVX" secondAttribute="top" constant="25" id="jRR-dX-qqL"/>
+                            <constraint firstItem="tjA-DY-Kp8" firstAttribute="trailing" secondItem="4TK-Cw-C3T" secondAttribute="trailing" constant="15" id="xkr-py-2w7"/>
+                            <constraint firstItem="BnQ-8t-Gy5" firstAttribute="top" secondItem="4TK-Cw-C3T" secondAttribute="bottom" constant="15" id="zAJ-Fm-dqg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tjA-DY-Kp8"/>
+                    </view>
+                    <connections>
+                        <outlet property="NewCardTable" destination="4TK-Cw-C3T" id="vzX-gj-8st"/>
+                        <segue destination="oD0-7v-HKu" kind="show" identifier="AddCards" id="xha-93-iqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNt-lL-COJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="118"/>
+        </scene>
+        <!--Display Card View Controller-->
+        <scene sceneID="4z5-7X-KM9">
+            <objects>
+                <viewController id="LDU-dH-zDk" customClass="DisplayCardViewController" customModule="RandomFlashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sAk-ag-qwW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lG6-LK-4xf" userLabel="HeaderStack">
+                                <rect key="frame" x="15" y="35" width="384" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxQ-jo-Lhy">
+                                        <rect key="frame" x="0.0" y="0.0" width="192" height="30"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="23"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.9997522234916687" green="0.80441337823867798" blue="0.11985153704881668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oD0-7v-HKu" kind="show" identifier="BackSegue" id="sRU-R9-Low"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Sj-rY-Ow1">
+                                        <rect key="frame" x="192" y="0.0" width="192" height="30"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-Bold" family="Hurme Geometric Sans 3" pointSize="33"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DxQ-jo-Lhy" firstAttribute="leading" secondItem="lG6-LK-4xf" secondAttribute="leading" id="Ehc-yw-3k1"/>
+                                    <constraint firstItem="7Sj-rY-Ow1" firstAttribute="leading" secondItem="DxQ-jo-Lhy" secondAttribute="trailing" id="M3Z-Op-slZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="bdz-cC-i5Q"/>
+                                    <constraint firstItem="DxQ-jo-Lhy" firstAttribute="top" secondItem="lG6-LK-4xf" secondAttribute="top" id="c2O-83-KI4"/>
+                                    <constraint firstItem="7Sj-rY-Ow1" firstAttribute="leading" secondItem="DxQ-jo-Lhy" secondAttribute="trailing" id="jVw-vk-zSw"/>
+                                    <constraint firstAttribute="bottom" secondItem="DxQ-jo-Lhy" secondAttribute="bottom" id="mEv-ek-0tK"/>
+                                    <constraint firstItem="7Sj-rY-Ow1" firstAttribute="leading" secondItem="DxQ-jo-Lhy" secondAttribute="trailing" id="rAe-nw-6bm"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvS-Ob-igZ">
+                                <rect key="frame" x="15" y="80" width="384" height="561"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xxZ-1X-j7b">
+                                        <rect key="frame" x="10" y="10" width="364" height="491"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfO-rx-ja2" userLabel="LabelView">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="212.66666666666666"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7B-Pi-bvQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="364" height="212.66666666666666"/>
+                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBold" family="Hurme Geometric Sans 3" pointSize="35"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="h7B-Pi-bvQ" firstAttribute="top" secondItem="gfO-rx-ja2" secondAttribute="top" id="0N7-hD-hGv"/>
+                                                    <constraint firstItem="h7B-Pi-bvQ" firstAttribute="leading" secondItem="gfO-rx-ja2" secondAttribute="leading" id="7ME-zc-eyb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="h7B-Pi-bvQ" secondAttribute="trailing" id="PgR-1o-o8H"/>
+                                                    <constraint firstAttribute="bottom" secondItem="h7B-Pi-bvQ" secondAttribute="bottom" id="qUl-gU-Yqu"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJX-Ur-Ii1">
+                                                <rect key="frame" x="0.0" y="227.66666666666671" width="364" height="263.33333333333326"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cJX-Ur-Ii1" firstAttribute="leading" secondItem="xxZ-1X-j7b" secondAttribute="leading" id="99c-Qm-Ngp"/>
+                                            <constraint firstItem="gfO-rx-ja2" firstAttribute="leading" secondItem="xxZ-1X-j7b" secondAttribute="leading" id="EJn-9s-qBz"/>
+                                            <constraint firstItem="gfO-rx-ja2" firstAttribute="top" secondItem="xxZ-1X-j7b" secondAttribute="top" id="FY0-zO-gFf"/>
+                                            <constraint firstAttribute="trailing" secondItem="gfO-rx-ja2" secondAttribute="trailing" id="KuS-nf-swP"/>
+                                            <constraint firstAttribute="trailing" secondItem="cJX-Ur-Ii1" secondAttribute="trailing" id="npn-bs-cj5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mV-1r-5FD" userLabel="InvisButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="561"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="flipCard:" destination="LDU-dH-zDk" eventType="touchUpInside" id="Ke3-3H-cVu"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x1j-nW-42j" userLabel="StarStack">
+                                        <rect key="frame" x="138" y="506" width="108" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnP-jv-Bcz" userLabel="1Star">
+                                                <rect key="frame" x="0.0" y="7" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="8R4-Dv-Q42"/>
+                                                    <constraint firstAttribute="width" constant="36" id="ODX-V7-5wk"/>
+                                                </constraints>
+                                                <state key="normal" image="filled-star">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <state key="selected" image="filled-star"/>
+                                                <state key="highlighted" image="filled-star"/>
+                                                <connections>
+                                                    <action selector="oneStarPress:" destination="LDU-dH-zDk" eventType="touchUpInside" id="LXv-YH-osR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uD3-Rm-8jv" userLabel="2Star">
+                                                <rect key="frame" x="36" y="7" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="SMb-mJ-M8D"/>
+                                                    <constraint firstAttribute="height" constant="36" id="sPc-88-VFK"/>
+                                                </constraints>
+                                                <state key="normal" image="empty-star"/>
+                                                <state key="selected" image="filled-star"/>
+                                                <state key="highlighted" image="filled-star"/>
+                                                <connections>
+                                                    <action selector="twoStarPress:" destination="LDU-dH-zDk" eventType="touchUpInside" id="Qhd-oy-YDr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-yZ-WpI" userLabel="3Star">
+                                                <rect key="frame" x="72" y="7" width="36" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="4mp-O4-Zn9"/>
+                                                    <constraint firstAttribute="height" constant="36" id="Ht0-Ao-fiu"/>
+                                                </constraints>
+                                                <state key="normal" image="empty-star"/>
+                                                <state key="selected" image="filled-star"/>
+                                                <state key="highlighted" image="filled-star"/>
+                                                <connections>
+                                                    <action selector="threeStarPress:" destination="LDU-dH-zDk" eventType="touchUpInside" id="epF-zi-t3e"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Tdh-VB-lN3"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3mV-1r-5FD" secondAttribute="trailing" id="3Nf-Uz-QN9"/>
+                                    <constraint firstAttribute="bottom" secondItem="x1j-nW-42j" secondAttribute="bottom" constant="5" id="Dhb-oD-si4"/>
+                                    <constraint firstItem="3mV-1r-5FD" firstAttribute="leading" secondItem="WvS-Ob-igZ" secondAttribute="leading" id="I1A-J8-UeY"/>
+                                    <constraint firstItem="xxZ-1X-j7b" firstAttribute="leading" secondItem="WvS-Ob-igZ" secondAttribute="leading" constant="10" id="Ica-mP-nwM"/>
+                                    <constraint firstAttribute="bottom" secondItem="3mV-1r-5FD" secondAttribute="bottom" id="MU8-9b-ehf"/>
+                                    <constraint firstItem="3mV-1r-5FD" firstAttribute="top" secondItem="WvS-Ob-igZ" secondAttribute="top" id="SC6-go-R6S"/>
+                                    <constraint firstItem="x1j-nW-42j" firstAttribute="centerX" secondItem="WvS-Ob-igZ" secondAttribute="centerX" id="W72-fL-uTu"/>
+                                    <constraint firstItem="x1j-nW-42j" firstAttribute="top" secondItem="xxZ-1X-j7b" secondAttribute="bottom" constant="5" id="eY9-R2-IpE"/>
+                                    <constraint firstAttribute="trailing" secondItem="xxZ-1X-j7b" secondAttribute="trailing" constant="10" id="tTN-3s-jsw"/>
+                                    <constraint firstItem="xxZ-1X-j7b" firstAttribute="top" secondItem="WvS-Ob-igZ" secondAttribute="top" constant="10" id="xOM-SV-xWk"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qWD-oB-w2C" userLabel="DisplayNavigation">
+                                <rect key="frame" x="15" y="646" width="384" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pC7-7g-Jsj">
+                                        <rect key="frame" x="0.0" y="17.666666666666629" width="121.33333333333333" height="40"/>
+                                        <color key="backgroundColor" red="0.23432627319999999" green="0.81294131280000004" blue="0.81223237510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="28"/>
+                                        <state key="normal" title="Prev">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="prevCard:" destination="LDU-dH-zDk" eventType="touchUpInside" id="zN1-xA-pX1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1G-f9-16x">
+                                        <rect key="frame" x="131.33333333333334" y="13.666666666666629" width="121.33333333333334" height="48"/>
+                                        <state key="normal" image="orange-help-48">
+                                            <color key="titleColor" red="0.23432627319999999" green="0.81294131280000004" blue="0.81223237510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="press_help:" destination="LDU-dH-zDk" eventType="touchUpInside" id="Muj-tN-CPa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhz-CM-IFW">
+                                        <rect key="frame" x="262.66666666666669" y="17.666666666666629" width="121.33333333333331" height="40"/>
+                                        <color key="backgroundColor" red="0.23432627319999999" green="0.81294131280000004" blue="0.81223237510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans1-SemiBold" family="Hurme Geometric Sans 1" pointSize="28"/>
+                                        <state key="normal" title="Random">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextCard:" destination="LDU-dH-zDk" eventType="touchUpInside" id="Agf-bJ-igp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="TPd-J8-ERB"/>
+                                </constraints>
+                            </stackView>
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYn-MF-cv6" userLabel="HelpOverlay">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPG-JC-zZk" userLabel="RemoveHelp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                        <connections>
+                                            <action selector="remove_help:" destination="LDU-dH-zDk" eventType="touchUpInside" id="rpg-5f-8y1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the card to see the answer!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="q91-c9-J4h">
+                                        <rect key="frame" x="15" y="50" width="384" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ma0-qm-G6M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBold" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="18y-U6-ttk">
+                                        <rect key="frame" x="15" y="150" width="384" height="250"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Familiarity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZr-eS-3rq" userLabel="Familiarity">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="jpk-ZA-6pM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HurmeGeometricSans1-Black" family="Hurme Geometric Sans 1" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pk0-0R-qzp" userLabel="OneStack">
+                                                <rect key="frame" x="0.0" y="50" width="217" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filled-star" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-V4-yX6">
+                                                        <rect key="frame" x="0.0" y="9" width="32" height="32"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  &quot;What is this?&quot;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9Y-nB-w5l">
+                                                        <rect key="frame" x="32" y="12.666666666666657" width="185" height="25"/>
+                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBold" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DA1-S6-kg6" userLabel="TwoStack">
+                                                <rect key="frame" x="0.0" y="100" width="279" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twostar" translatesAutoresizingMaskIntoConstraints="NO" id="unk-9i-UXE">
+                                                        <rect key="frame" x="0.0" y="16.666666666666686" width="32" height="17"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  &quot;I'm getting there...&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-t5-mtf">
+                                                        <rect key="frame" x="32" y="12.666666666666686" width="247" height="25"/>
+                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBold" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tBY-rE-jqK" userLabel="ThreeStack">
+                                                <rect key="frame" x="0.0" y="150" width="209" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="threestar" translatesAutoresizingMaskIntoConstraints="NO" id="ulh-F5-Rkz">
+                                                        <rect key="frame" x="0.0" y="16" width="48" height="18"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" &quot;I know this!&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-9t-oQK">
+                                                        <rect key="frame" x="48" y="12.666666666666686" width="161" height="25"/>
+                                                        <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBold" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards you're less familiar with  will appear more often" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgQ-vb-dvk">
+                                                <rect key="frame" x="0.0" y="200" width="384" height="50"/>
+                                                <fontDescription key="fontDescription" name="HurmeGeometricSans3-SemiBold" family="Hurme Geometric Sans 3" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="LgQ-vb-dvk" firstAttribute="leading" secondItem="18y-U6-ttk" secondAttribute="leading" id="2L8-ud-p8s"/>
+                                            <constraint firstItem="tZr-eS-3rq" firstAttribute="centerX" secondItem="18y-U6-ttk" secondAttribute="centerX" id="rt4-Dd-oNW"/>
+                                            <constraint firstAttribute="trailing" secondItem="LgQ-vb-dvk" secondAttribute="trailing" id="zGz-rF-9pG"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lPG-JC-zZk" secondAttribute="bottom" id="2av-Of-bgW"/>
+                                    <constraint firstItem="lPG-JC-zZk" firstAttribute="top" secondItem="UYn-MF-cv6" secondAttribute="top" id="4kC-66-J3Z"/>
+                                    <constraint firstItem="q91-c9-J4h" firstAttribute="top" secondItem="UYn-MF-cv6" secondAttribute="top" constant="50" id="ACR-TV-UV0"/>
+                                    <constraint firstItem="lPG-JC-zZk" firstAttribute="leading" secondItem="UYn-MF-cv6" secondAttribute="leading" id="J1h-E2-E6O"/>
+                                    <constraint firstItem="18y-U6-ttk" firstAttribute="top" secondItem="q91-c9-J4h" secondAttribute="bottom" constant="50" id="Xe7-8c-EfR"/>
+                                    <constraint firstAttribute="trailing" secondItem="lPG-JC-zZk" secondAttribute="trailing" id="diN-8j-8sE"/>
+                                    <constraint firstItem="18y-U6-ttk" firstAttribute="leading" secondItem="UYn-MF-cv6" secondAttribute="leading" constant="15" id="kkh-Em-gWL"/>
+                                    <constraint firstAttribute="trailing" secondItem="q91-c9-J4h" secondAttribute="trailing" constant="15" id="mwf-XN-I9h"/>
+                                    <constraint firstItem="q91-c9-J4h" firstAttribute="leading" secondItem="UYn-MF-cv6" secondAttribute="leading" constant="15" id="ok1-Qs-v4P"/>
+                                    <constraint firstAttribute="trailing" secondItem="18y-U6-ttk" secondAttribute="trailing" constant="15" id="opy-TV-YOr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25812309979999998" green="0.34161823990000001" blue="0.69881242509999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sTe-Ry-ziH" firstAttribute="bottom" secondItem="UYn-MF-cv6" secondAttribute="bottom" id="GV2-dH-f92"/>
+                            <constraint firstItem="sTe-Ry-ziH" firstAttribute="trailing" secondItem="qWD-oB-w2C" secondAttribute="trailing" constant="15" id="IE3-pf-7w7"/>
+                            <constraint firstItem="sTe-Ry-ziH" firstAttribute="trailing" secondItem="UYn-MF-cv6" secondAttribute="trailing" id="K2d-aR-XY9"/>
+                            <constraint firstItem="qWD-oB-w2C" firstAttribute="leading" secondItem="sTe-Ry-ziH" secondAttribute="leading" constant="15" id="PGL-h3-OZg"/>
+                            <constraint firstItem="sTe-Ry-ziH" firstAttribute="bottom" secondItem="qWD-oB-w2C" secondAttribute="bottom" constant="15" id="Tvh-2q-lUL"/>
+                            <constraint firstItem="UYn-MF-cv6" firstAttribute="top" secondItem="sTe-Ry-ziH" secondAttribute="top" id="Xzl-W0-Ohk"/>
+                            <constraint firstItem="lG6-LK-4xf" firstAttribute="trailing" secondItem="WvS-Ob-igZ" secondAttribute="trailing" id="YTv-Uj-WYt"/>
+                            <constraint firstItem="lG6-LK-4xf" firstAttribute="top" secondItem="sTe-Ry-ziH" secondAttribute="top" constant="15" id="d13-gL-PvM"/>
+                            <constraint firstItem="UYn-MF-cv6" firstAttribute="leading" secondItem="sTe-Ry-ziH" secondAttribute="leading" id="ddT-Fc-ITM"/>
+                            <constraint firstItem="WvS-Ob-igZ" firstAttribute="leading" secondItem="sTe-Ry-ziH" secondAttribute="leading" constant="15" id="fYj-zn-U4k"/>
+                            <constraint firstItem="qWD-oB-w2C" firstAttribute="top" secondItem="WvS-Ob-igZ" secondAttribute="bottom" constant="5" id="ica-Ec-v1i"/>
+                            <constraint firstItem="sTe-Ry-ziH" firstAttribute="trailing" secondItem="WvS-Ob-igZ" secondAttribute="trailing" constant="15" id="idr-XQ-7du"/>
+                            <constraint firstItem="lG6-LK-4xf" firstAttribute="leading" secondItem="WvS-Ob-igZ" secondAttribute="leading" id="sX9-hM-H7J"/>
+                            <constraint firstItem="WvS-Ob-igZ" firstAttribute="top" secondItem="lG6-LK-4xf" secondAttribute="bottom" constant="15" id="zQe-9o-AhA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sTe-Ry-ziH"/>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="HelpButton" destination="G1G-f9-16x" id="uXl-dY-ihA"/>
+                        <outlet property="HelpOverlay" destination="UYn-MF-cv6" id="hgp-ig-6ga"/>
+                        <outlet property="OneStarButton" destination="NnP-jv-Bcz" id="KXf-Yf-LAl"/>
+                        <outlet property="RemoveHelp" destination="lPG-JC-zZk" id="RoV-3h-n5y"/>
+                        <outlet property="ThreeStarButton" destination="Vy3-yZ-WpI" id="3FG-AV-puP"/>
+                        <outlet property="TwoStarButton" destination="uD3-Rm-8jv" id="Y6B-g9-nte"/>
+                        <outlet property="ViewBack" destination="WvS-Ob-igZ" id="lc8-ao-3fD"/>
+                        <outlet property="cardImage" destination="cJX-Ur-Ii1" id="SyF-mn-8hM"/>
+                        <outlet property="cardStateLabel" destination="7Sj-rY-Ow1" id="abV-sL-ogs"/>
+                        <outlet property="cardText" destination="h7B-Pi-bvQ" id="ZFU-KM-Uac"/>
+                        <outlet property="stackView" destination="xxZ-1X-j7b" id="xq8-ZB-8WN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPh-7u-Nuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1166.6666666666667" y="-589.4021739130435"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="empty-star" width="32" height="32"/>
+        <image name="filled-star" width="32" height="32"/>
+        <image name="icon-flashcard-white" width="180" height="180"/>
+        <image name="icons8-checked-checkbox-48" width="48" height="48"/>
+        <image name="icons8-unchecked-checkbox-48" width="48" height="48"/>
+        <image name="orange-help-48" width="48" height="48"/>
+        <image name="save" width="32" height="32"/>
+        <image name="threestar" width="48" height="18"/>
+        <image name="trash" width="32" height="32"/>
+        <image name="twostar" width="32" height="17"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GYG-L2-QH6"/>
+        <segue reference="S3T-zb-IAx"/>
+        <segue reference="zMv-UT-xnx"/>
+    </inferredMetricsTieBreakers>
+</document>
