@@ -8,23 +8,12 @@ These are a couple of the more notable apps I developed during my time in NMIX 4
 
 ## Jukebox
 
-This is a simple UNIX shell that supports job control and a few basic commands.
-It has a full command line interpreter that will correctly read quoted segments and break for break characters.
-The shell supports piping and redirection.
+The Jukebox app uses the Apple iTunes API to deliver samples of iTunes' top 10 hottest tracks. With simple JSON parsing, the app can get all of the metadata for songs and then dive into a separate section of a slightly different Apple API to retrieve the song itself. Given that this functionality took a little twisting for me to accomplish on the part of retrieving the song, I imagine Apple may eventually remove song sample clips from non-affiliate APIs.
+Sadly, samples are limited to just 30 seconds each, but you can browse the top 10 to view artist and album names, the album artwork, and listen to the clip. If I were to update this further in the future, I would likely include a less wonky-looking interface, links to the iTunes store, and perhaps divide it into several categories of songs to select from.
+(And maybe make it look like good old WinAmp from my childhood...)
 
-**Basic commands:**
-exit, cd, export, jobs, fg, bg, kill, help
-
-Compile by running the makefile in a UNIX environment.
+You can [https://github.com/Jorycle/NMIX-4310/tree/master/Jukebox](view the code here), or [https://github.com/Jorycle/NMIX-4310/raw/master/Jukebox.zip](download the archive here).
 
 ## RandomFlashcards
-(Windows-based GUI)
 
-This is a simple line drawing program that draws two dimensional images using sets of line coordinates provided by a user-selected text file. An example Mario text file is included (Mario is missing his hands due to a tragic plumbing accident).
-
-After loading an image file, the controls may be used to rotate, scale, or translate the image.
-Basic transformations will use the coordinates (0,0) as the center of transformation.
-Advanced transformations allow the user to provide the coordinates to transform about.
-The current image can be saved using the "Save Lines" feature.
-
-After each transformation, pressing the "Draw" button will update the image. This is done deliberately for academic purposes - under the hood, the rasterization uses matrices to manipulate and display the image. By updating only at draw, we can observe the power of matrix concatenation in action.
+This is my centerpiece, final project app for NMIX 4310 and it represents just about everything I learned in the class. It 
