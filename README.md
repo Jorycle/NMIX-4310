@@ -12,7 +12,7 @@ The Jukebox app uses the Apple iTunes API to deliver samples of iTunes' top 10 h
 Sadly, samples are limited to just 30 seconds each, but you can browse the top 10 to view artist and album names, the album artwork, and listen to the clip. If I were to update this further in the future, I would likely include a less wonky-looking interface, links to the iTunes store, and perhaps divide it into several categories of songs to select from.
 (And maybe make it look like good old WinAmp from my childhood...)
 
-You can [https://github.com/Jorycle/NMIX-4310/tree/master/Jukebox](view the code here), or [https://github.com/Jorycle/NMIX-4310/raw/master/Jukebox.zip](download the archive here).
+You can [view the code here](https://github.com/Jorycle/NMIX-4310/tree/master/Jukebox), or [download the archive here](https://github.com/Jorycle/NMIX-4310/raw/master/Jukebox.zip).
 
 ## RandomFlashcards
 
